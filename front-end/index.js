@@ -17,19 +17,60 @@
     shadowing : variable declared out of block and again declared inside block while accessing same variable inside 
     block varible accessed will be which declared inside box and even it's changes values of variable out side 
     block in case of var type variable but not in let or const
-*/
 
-// blocked acope and shadowing
-var a= 100;
-let b =100;
-{
-    let a = 10;       // shadows the global var a and modifies it's value from inside the 
-    let b =20           // b also shadows the let b of global but it's can not change value of
-                        // global b cause they both exist in diffrent block same for const
-    const c =30;
+    ********Code for Blocked scope and shadowing
+    var a= 100;
+    let b =100;
+    {
+        let a = 10;       // shadows the global var a and modifies it's value from inside the 
+        let b =20           // b also shadows the let b of global but it's can not change value of
+                            // global b cause they both exist in diffrent block same for const
+        const c =30;
+        console.log(a);
+        console.log(b);
+        console.log(c);
+    }
     console.log(a);
     console.log(b);
-    console.log(c);
+____________________________________________________________
+    Closure in JS
+
+*/
+function outest(){
+    function outer(x){
+   
+        function inner(){
+            console.log(a, x);
+        }
+        const a= 10;
+        return inner;
+    }
+    return outer;
 }
-console.log(a);
-console.log(b);
+
+
+var call = outest("Hello world!!");
+call()();
+
+function encapsulation(){
+    let dost ="let's play";
+    let count = 0; 
+    this.incrementValue = ()=>{
+        count++;
+        console.log(count,dost);
+    } 
+
+    this.decrementValue = ()=>{
+        count--;
+        console.log(count,dost);
+    }
+}
+
+let trial = new encapsulation();
+trial.incrementValue();
+trial.decrementValue();
+let trial2 = new encapsulation();
+trial2.incrementValue();
+trial2.incrementValue();
+trial2.incrementValue();
+trial2.incrementValue();

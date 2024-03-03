@@ -1,0 +1,11 @@
+body{
+    font-family: "Helvetica", Sans-Serif;
+    
+}
+
+.phrase{
+    color: brown;
+    position: relative;
+    margin-left: 30%;
+    margin-top: 10%;
+}
