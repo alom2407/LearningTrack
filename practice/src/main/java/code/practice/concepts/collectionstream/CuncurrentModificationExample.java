@@ -1,4 +1,4 @@
-package code.practice.concepts.threads.collectionstream;
+package code.practice.concepts.collectionstream;
 
 import java.util.ArrayList;
 import java.util.Iterator;
