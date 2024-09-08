@@ -1,0 +1,10 @@
+Write program to generate CuncurrentModificationException?
+
+Write program to short employee on basis of salaryUser Stream?
+Answer:
+empList.Stream().sort(Compartor.comparing(Employee::getSalary).reversed).collect(Collector.toList());
+
+what is optional?
+ans: optional is container interoduced to avoid null pointer exception in java 8.
+
+What is Threadpool and executorService?
