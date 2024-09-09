@@ -14,6 +14,9 @@ public class ThreadOnNumbers {
         }
     }
 
+    // Thread can communicate using wait(), notify() and notifyAll() methods
+    // These methods must be used
+    // within synchronized blocks or methods to avoid IllegalMonitorStateException
     public synchronized void printTill(int limit){
         if(!isComplete)
         {
