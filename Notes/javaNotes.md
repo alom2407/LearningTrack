@@ -1,4 +1,3 @@
-Here are the notes that have been tracked so far:
 
 ---
 
@@ -193,4 +192,3 @@ class CustomThreadFactory implements ThreadFactory {
 
 ---
 
-Let me know if you want to update or dive into any of these topics further!
