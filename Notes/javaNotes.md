@@ -6,7 +6,7 @@
 **Summary**:  
 Custom exceptions are user-defined exceptions that extend the `Exception` class (for checked exceptions) or `RuntimeException` (for unchecked exceptions). They are used to handle application-specific errors with clearer intent and reusability. A custom exception class provides specific error messages and is thrown when a particular condition in business logic fails. By creating a custom exception, error handling becomes more organized and easier to understand.
 
-Example: `InvalidAgeException` used to validate age in an application.
+Example: `InvalidAgeException` and `InvalidUserId` used to validate age in an application.
 
 ---
 
